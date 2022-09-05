@@ -1,13 +1,15 @@
 {
   "name": "react-weui-tsx",
   "version": "0.1.0",
-  "description": "react-components by weui",
+  "description": "react-components by weui2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./build/esbuild.prod.mjs",
-    "build:types": "tsc --emitDeclarationOnly --outDir lib"
+    "build:types": "tsc --emitDeclarationOnly --outDir lib",
+    "build:json": "node ./build/script.json.mjs"
+
   },
   "repository": {
     "type": "git",
@@ -24,11 +26,7 @@
     "esbuild": "^0.15.6",
     "less": "^4.1.3"
   },
-  "dependencies": {
-    "react": "^18.0.0"
-  },
   "peerDependencies": {
-    "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
 }
